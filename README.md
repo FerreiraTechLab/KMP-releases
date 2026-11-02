@@ -13,7 +13,7 @@ As versões ficam em [Releases](https://github.com/FerreiraTechLab/KMP-releases/
 | Aplicativo | Para quem | Arquivo |
 | --- | --- | --- |
 | **KMP Client** | Quem baixa e instala jogos no console | `KMP-v<versão>.zip` |
-| **KMP Publisher** | Quem publica ports no catálogo | `KMP Publisher-<versão>.AppImage` (Linux), `KMP Publisher Setup <versão>.exe` (Windows), `KMP Publisher-<versão>-arm64.dmg` (Mac Apple Silicon), `KMP Publisher-<versão>.dmg` (Mac Intel) |
+| **KMP Publisher** | Quem publica ports no catálogo | `KMP-Publisher-<versão>-linux-x64.AppImage`, `KMP-Publisher-<versão>-windows-x64-setup.exe`, `KMP-Publisher-<versão>-macos-arm64.dmg` (Apple Silicon) ou `KMP-Publisher-<versão>-macos-x64.dmg` (Intel) |
 
 ### KMP Client no console
 
@@ -28,7 +28,7 @@ O console também semeia o que baixou (até 100 KiB/s por padrão, pausando com 
 
 Os instaladores ainda **não são assinados**, então o sistema avisa na primeira vez:
 
-- **Linux:** `chmod +x "KMP Publisher-<versão>.AppImage"` e execute o arquivo.
+- **Linux:** `chmod +x KMP-Publisher-<versão>-linux-x64.AppImage` e execute o arquivo.
 - **Windows:** no aviso do SmartScreen, clique em **Mais informações → Executar assim mesmo**.
 - **macOS:** abra o DMG, arraste o app para Aplicativos e, na primeira abertura, clique com o botão direito no app e escolha **Abrir**.
 
@@ -40,7 +40,7 @@ Cada release traz `SHA256SUMS.txt`. Confira antes de instalar:
 sha256sum -c SHA256SUMS.txt --ignore-missing
 ```
 
-No Windows (PowerShell): `Get-FileHash "KMP Publisher Setup <versão>.exe"` e compare com a linha correspondente.
+No Windows (PowerShell): `Get-FileHash KMP-Publisher-<versão>-windows-x64-setup.exe` e compare com a linha correspondente.
 
 ## Limitações conhecidas da alfa
 
@@ -65,6 +65,6 @@ Full documentation: <https://kpm-ferreiratechlab.web.app/en/docs/>
 Builds are under [Releases](https://github.com/FerreiraTechLab/KMP-releases/releases).
 
 - **KMP Client** (`KMP-v<version>.zip`): for PortMaster-compatible `aarch64` firmwares. Copy `KMP.sh` and `KMP/` to the Ports folder and open **KMP** from the Ports menu. The console also seeds what it downloaded.
-- **KMP Publisher**: AppImage for Linux, NSIS installer for Windows, and DMGs for Apple Silicon (`-arm64`) and Intel Macs. The installers are **not signed** yet: on Linux run `chmod +x` first; on Windows choose **More info → Run anyway**; on macOS right-click the app and choose **Open** the first time.
+- **KMP Publisher**: AppImage for Linux, installer for Windows, and DMGs for Apple Silicon (`macos-arm64`) and Intel (`macos-x64`) Macs. The installers are **not signed** yet: on Linux run `chmod +x` first; on Windows choose **More info → Run anyway**; on macOS right-click the app and choose **Open** the first time.
 
 Verify downloads with `sha256sum -c SHA256SUMS.txt --ignore-missing`. Report problems in [issues](https://github.com/FerreiraTechLab/KMP-releases/issues) with the app, version, system or firmware, and what happened.
