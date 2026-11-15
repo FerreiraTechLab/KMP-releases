@@ -32,6 +32,13 @@ Os instaladores ainda **não são assinados**, então o sistema avisa na primeir
 - **Windows:** no aviso do SmartScreen, clique em **Mais informações → Executar assim mesmo**.
 - **macOS:** abra o DMG, arraste o app para Aplicativos e, na primeira abertura, clique com o botão direito no app e escolha **Abrir**.
 
+## Atualizações
+
+Depois da primeira instalação, as versões novas chegam pelo próprio aplicativo:
+
+- **KMP Client** (a partir da 0.2.55): abra o menu do Client e escolha **Atualizar KMP**.
+- **KMP Publisher** (a partir da 0.3.9): um aviso aparece no painel com o botão **Atualizar**. No Linux ele troca o AppImage e reabre; no Windows abre o instalador novo; no Mac abre o DMG para você arrastar para Aplicativos.
+
 ## Conferindo os arquivos
 
 Cada release traz `SHA256SUMS.txt`. Confira antes de instalar:
@@ -66,5 +73,7 @@ Builds are under [Releases](https://github.com/FerreiraTechLab/KMP-releases/rele
 
 - **KMP Client** (`KMP-v<version>.zip`): for PortMaster-compatible `aarch64` firmwares. Copy `KMP.sh` and `KMP/` to the Ports folder and open **KMP** from the Ports menu. The console also seeds what it downloaded.
 - **KMP Publisher**: AppImage for Linux, installer for Windows, and DMGs for Apple Silicon (`macos-arm64`) and Intel (`macos-x64`) Macs. The installers are **not signed** yet: on Linux run `chmod +x` first; on Windows choose **More info → Run anyway**; on macOS right-click the app and choose **Open** the first time.
+
+After the first install, updates arrive in the apps themselves: from the Client menu (**Atualizar KMP**, since 0.2.55) and from the Publisher dashboard notice (since 0.3.9).
 
 Verify downloads with `sha256sum -c SHA256SUMS.txt --ignore-missing`. Report problems in [issues](https://github.com/FerreiraTechLab/KMP-releases/issues) with the app, version, system or firmware, and what happened.
