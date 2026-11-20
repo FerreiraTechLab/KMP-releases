@@ -32,6 +32,8 @@ Os instaladores ainda **não são assinados**, então o sistema avisa na primeir
 - **Windows:** no aviso do SmartScreen, clique em **Mais informações → Executar assim mesmo**.
 - **macOS:** abra o DMG, arraste o app para Aplicativos e, na primeira abertura, clique com o botão direito no app e escolha **Abrir**.
 
+Com o Publisher aberto, os consoles da mesma rede encontram o computador sozinhos e baixam os pacotes dele direto pela rede local.
+
 ## Atualizações
 
 Depois da primeira instalação, as versões novas chegam pelo próprio aplicativo:
