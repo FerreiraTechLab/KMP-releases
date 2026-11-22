@@ -6,6 +6,8 @@ Downloads oficiais do **KMP**, o instalador de homebrews para handhelds que dist
 
 Documentação completa: <https://kpm-ferreiratechlab.web.app>
 
+Código-fonte, sob a GNU GPL 3.0 ou posterior: [Client e daemon](https://github.com/FerreiraTechLab/KMP) e [Publisher](https://github.com/FerreiraTechLab/KMP-Publisher). O [catálogo](https://github.com/FerreiraTechLab/KMP-catalog) usa a licença MIT.
+
 ## Downloads
 
 As versões ficam em [Releases](https://github.com/FerreiraTechLab/KMP-releases/releases).
@@ -70,6 +72,8 @@ Official downloads of **KMP**, the homebrew installer for handhelds that distrib
 > **Closed alpha.** These builds are for a small group of testers. Expect bugs and changes without notice.
 
 Full documentation: <https://kpm-ferreiratechlab.web.app/en/docs/>
+
+Source code, under the GNU GPL 3.0 or later: [Client and daemon](https://github.com/FerreiraTechLab/KMP) and [Publisher](https://github.com/FerreiraTechLab/KMP-Publisher). The [catalog](https://github.com/FerreiraTechLab/KMP-catalog) is MIT licensed.
 
 Builds are under [Releases](https://github.com/FerreiraTechLab/KMP-releases/releases).
 
