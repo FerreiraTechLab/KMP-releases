@@ -19,9 +19,9 @@ As versões ficam em [Releases](https://github.com/FerreiraTechLab/KMP-releases/
 
 ### KMP Client no console
 
-Funciona em firmwares compatíveis com PortMaster em `aarch64` (DarkOS, Rocknix, AurNix e outros).
+Funciona em firmwares compatíveis com PortMaster em `aarch64` (dArkOS, ArkOS, ROCKNIX, UnofficialOS, muOS e outros).
 
-1. Extraia o ZIP e copie `KMP.sh` e a pasta `KMP/` para a pasta de Ports do cartão.
+1. Extraia o ZIP e copie `KMP.sh` e a pasta `KMP/` para a pasta de Ports do cartão. **No muOS**, os dois ficam em pastas diferentes: `KMP.sh` em `ROMS/Ports/` e a pasta `KMP/` em `ports/`, na raiz do cartão. Veja [Instalação por firmware](https://kpm-ferreiratechlab.web.app/docs/client/installation/).
 2. Abra **KMP** pelo menu Ports.
 
 O console também semeia o que baixou (até 1 MiB/s por padrão, pausando com bateria abaixo de 30%), ajudando os próximos a baixar mais rápido. Consoles na mesma rede se encontram sozinhos e trocam os pacotes direto pela rede local.
@@ -77,7 +77,7 @@ Source code, under the GNU GPL 3.0 or later: [Client and daemon](https://github.
 
 Builds are under [Releases](https://github.com/FerreiraTechLab/KMP-releases/releases).
 
-- **KMP Client** (`KMP-v<version>.zip`): for PortMaster-compatible `aarch64` firmwares. Copy `KMP.sh` and `KMP/` to the Ports folder and open **KMP** from the Ports menu. The console also seeds what it downloaded (up to 1 MiB/s by default), and consoles on the same network find each other and share packages over the local network.
+- **KMP Client** (`KMP-v<version>.zip`): for PortMaster-compatible `aarch64` firmwares. Copy `KMP.sh` and `KMP/` to the Ports folder and open **KMP** from the Ports menu. On **muOS**, `KMP.sh` goes to `ROMS/Ports/` and the `KMP/` folder to `ports/` at the root of the card; see [installation by firmware](https://kpm-ferreiratechlab.web.app/en/docs/client/installation/). The console also seeds what it downloaded (up to 1 MiB/s by default), and consoles on the same network find each other and share packages over the local network.
 - **KMP Publisher**: AppImage for Linux, installer for Windows, and DMGs for Apple Silicon (`macos-arm64`) and Intel (`macos-x64`) Macs. The installers are **not signed** yet: on Linux run `chmod +x` first; on Windows choose **More info → Run anyway**; on macOS right-click the app and choose **Open** the first time.
 
 After the first install, updates arrive in the apps themselves: from the Client menu (**Atualizar KMP**, since 0.2.55) and from the Publisher dashboard notice (since 0.3.9).
